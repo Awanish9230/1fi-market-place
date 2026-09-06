@@ -95,6 +95,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     padding: spacing.lg,
+    paddingBottom: 110,
   },
   header: {
     marginBottom: spacing.lg,

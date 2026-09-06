@@ -72,6 +72,7 @@ export default function LimitScreen() {
 const styles = StyleSheet.create({
   container: {
     padding: spacing.lg,
+    paddingBottom: 110,
   },
   mainCard: {
     backgroundColor: '#6022CD',

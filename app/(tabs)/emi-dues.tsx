@@ -62,6 +62,7 @@ export default function EmiDuesScreen() {
 const styles = StyleSheet.create({
   container: {
     padding: spacing.lg,
+    paddingBottom: 110,
   },
   dueCard: {
     backgroundColor: colors.cardBackground,

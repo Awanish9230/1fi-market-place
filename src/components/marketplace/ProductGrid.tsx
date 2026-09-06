@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   listContent: {
-    paddingBottom: spacing.massive,
+    paddingBottom: 110,
   },
   columnWrapper: {
     paddingHorizontal: spacing.lg,

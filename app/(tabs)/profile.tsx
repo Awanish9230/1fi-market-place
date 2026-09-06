@@ -71,6 +71,7 @@ export default function ProfileScreen() {
 const styles = StyleSheet.create({
   container: {
     padding: spacing.lg,
+    paddingBottom: 110,
   },
   userCard: {
     flexDirection: 'row',
