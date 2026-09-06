@@ -7,6 +7,7 @@ import { SearchBar } from '../../src/components/common/SearchBar';
 import { CategoryPills } from '../../src/components/marketplace/CategoryPills';
 import { ProductGrid } from '../../src/components/marketplace/ProductGrid';
 import { useProducts } from '../../src/hooks/useProducts';
+import { useDebounce } from '../../src/hooks/useDebounce';
 import { ProductCategory, Product } from '../../src/types/product';
 import { spacing } from '../../src/constants/spacing';
 import { typography } from '../../src/constants/typography';
@@ -18,6 +19,7 @@ export default function MarketplaceScreen() {
   const router = useRouter();
   const [selectedCategory, setSelectedCategory] = useState<ProductCategory>('All');
   const [searchQuery, setSearchQuery] = useState('');
+  const debouncedSearch = useDebounce(searchQuery, 400);
 
   const {
     data: products,
@@ -27,7 +29,7 @@ export default function MarketplaceScreen() {
     isRefetching,
   } = useProducts({
     category: selectedCategory,
-    search: searchQuery,
+    search: debouncedSearch,
   });
 
   const handleProductPress = (product: Product) => {

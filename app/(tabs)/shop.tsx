@@ -12,6 +12,7 @@ import { SearchBar } from '../../src/components/common/SearchBar';
 import { CategoryPills } from '../../src/components/marketplace/CategoryPills';
 import { ProductGrid } from '../../src/components/marketplace/ProductGrid';
 import { useProducts } from '../../src/hooks/useProducts';
+import { useDebounce } from '../../src/hooks/useDebounce';
 import { ProductCategory, Product } from '../../src/types/product';
 import { colors } from '../../src/constants/colors';
 import { spacing, borderRadius, shadows } from '../../src/constants/spacing';
@@ -33,10 +34,11 @@ export default function ShopScreen() {
   const [activeTab, setActiveTab] = useState<ShopTabType>('marketplace');
   const [selectedCategory, setSelectedCategory] = useState<ProductCategory>('All');
   const [searchQuery, setSearchQuery] = useState('');
+  const debouncedSearch = useDebounce(searchQuery, 400);
   const [selectedLocation, setSelectedLocation] = useState('Indiranagar, Bengaluru');
   const [locationModalVisible, setLocationModalVisible] = useState(false);
 
-  // TanStack React Query for data fetching
+  // TanStack React Query for data fetching with debounced search
   const {
     data: products,
     isLoading,
@@ -45,7 +47,7 @@ export default function ShopScreen() {
     isRefetching,
   } = useProducts({
     category: selectedCategory,
-    search: searchQuery,
+    search: debouncedSearch,
   });
 
   const handleProductPress = (product: Product) => {
