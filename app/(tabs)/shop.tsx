@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { View, StyleSheet, Text, Modal, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Text, Modal, TouchableOpacity, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 import { MapPin, Check } from 'lucide-react-native';
 import { Screen } from '../../src/components/common/Screen';
@@ -60,55 +60,59 @@ export default function ShopScreen() {
     setSearchQuery(brandName);
   };
 
-  const marketplaceHeader = useMemo(() => {
+  const renderHeader = useMemo(() => {
     return (
-      <View style={styles.marketplaceHeader}>
-        {/* Search Input */}
-        <View style={styles.searchWrapper}>
-          <SearchBar
-            value={searchQuery}
-            onChangeText={setSearchQuery}
-            placeholder="Search electronics, mobiles, laptops..."
-          />
-        </View>
-
-        {/* Category Pills */}
-        <CategoryPills
-          categories={CATEGORIES}
-          selectedCategory={selectedCategory}
-          onSelectCategory={setSelectedCategory}
+      <View>
+        {/* 1Fi Shop Top Header */}
+        <ShopHeader
+          location={selectedLocation}
+          onLocationPress={() => setLocationModalVisible(true)}
         />
 
-        {/* Section Heading */}
-        <View style={styles.sectionHeader}>
-          <Text style={styles.sectionTitle}>
-            {selectedCategory === 'All' ? 'Featured Electronics' : `${selectedCategory} on 0% EMI`}
-          </Text>
-          {products && products.length > 0 && (
-            <Text style={styles.itemCount}>
-              {products.length} {products.length === 1 ? 'item' : 'items'}
-            </Text>
-          )}
-        </View>
+        {/* Promotional Banner */}
+        <PromoBanner onPress={() => setActiveTab('marketplace')} />
+
+        {/* 3-Way Segment Switcher: Top Brands | Nearby Stores | Marketplace */}
+        <ShopTabs activeTab={activeTab} onTabChange={setActiveTab} />
+
+        {activeTab === 'marketplace' && (
+          <View style={styles.marketplaceHeader}>
+            {/* Search Input */}
+            <View style={styles.searchWrapper}>
+              <SearchBar
+                value={searchQuery}
+                onChangeText={setSearchQuery}
+                placeholder="Search electronics, mobiles, laptops..."
+              />
+            </View>
+
+            {/* Category Pills */}
+            <CategoryPills
+              categories={CATEGORIES}
+              selectedCategory={selectedCategory}
+              onSelectCategory={setSelectedCategory}
+            />
+
+            {/* Section Heading */}
+            <View style={styles.sectionHeader}>
+              <Text style={styles.sectionTitle}>
+                {selectedCategory === 'All' ? 'Featured Electronics' : `${selectedCategory} on 0% EMI`}
+              </Text>
+              {products && products.length > 0 && (
+                <Text style={styles.itemCount}>
+                  {products.length} {products.length === 1 ? 'item' : 'items'}
+                </Text>
+              )}
+            </View>
+          </View>
+        )}
       </View>
     );
-  }, [searchQuery, selectedCategory, products]);
+  }, [selectedLocation, activeTab, searchQuery, selectedCategory, products]);
 
   return (
     <Screen edges={['top', 'left', 'right']}>
-      {/* 1Fi Shop Top Header */}
-      <ShopHeader
-        location={selectedLocation}
-        onLocationPress={() => setLocationModalVisible(true)}
-      />
-
-      {/* Promotional Banner */}
-      <PromoBanner onPress={() => setActiveTab('marketplace')} />
-
-      {/* 3-Way Segment Switcher: Top Brands | Nearby Stores | 1Fi Marketplace */}
-      <ShopTabs activeTab={activeTab} onTabChange={setActiveTab} />
-
-      {/* Tab Contents */}
+      {/* Tab Contents with fully unified natural scrolling */}
       {activeTab === 'marketplace' && (
         <ProductGrid
           products={products}
@@ -118,7 +122,7 @@ export default function ShopScreen() {
           onRefresh={refetch}
           isRefreshing={isRefetching}
           onProductPress={handleProductPress}
-          ListHeaderComponent={marketplaceHeader}
+          ListHeaderComponent={renderHeader}
           onClearFilters={() => {
             setSearchQuery('');
             setSelectedCategory('All');
@@ -127,11 +131,23 @@ export default function ShopScreen() {
       )}
 
       {activeTab === 'top-brands' && (
-        <TopBrandsView onSelectBrand={handleBrandSelect} />
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={styles.scrollTabContent}
+        >
+          {renderHeader}
+          <TopBrandsView onSelectBrand={handleBrandSelect} />
+        </ScrollView>
       )}
 
       {activeTab === 'nearby-stores' && (
-        <NearbyStoresView onSelectLocation={() => setLocationModalVisible(true)} />
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={styles.scrollTabContent}
+        >
+          {renderHeader}
+          <NearbyStoresView onSelectLocation={() => setLocationModalVisible(true)} />
+        </ScrollView>
       )}
 
       {/* Location Selection Bottom Sheet Modal */}
@@ -219,6 +235,9 @@ const styles = StyleSheet.create({
   itemCount: {
     fontSize: typography.sizes.xs,
     color: colors.textMuted,
+  },
+  scrollTabContent: {
+    paddingBottom: 120,
   },
   modalOverlay: {
     flex: 1,
