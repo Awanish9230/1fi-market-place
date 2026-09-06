@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { MapPin, ChevronDown, Bell } from 'lucide-react-native';
 import { colors } from '../../constants/colors';
 import { spacing, borderRadius } from '../../constants/spacing';
@@ -16,17 +16,24 @@ export const ShopHeader: React.FC<ShopHeaderProps> = ({
 }) => {
   return (
     <View style={styles.container}>
-      <View>
-        <Text style={styles.greeting}>Shop with 1Fi</Text>
-        <TouchableOpacity
-          activeOpacity={0.7}
-          onPress={onLocationPress}
-          style={styles.locationSelector}
-        >
-          <MapPin size={14} color={colors.primary} />
-          <Text style={styles.locationText} numberOfLines={1}>{location}</Text>
-          <ChevronDown size={14} color={colors.textSecondary} />
-        </TouchableOpacity>
+      <View style={styles.leftSection}>
+        <Image
+          source={require('../../../assets/1fi-logo.png')}
+          style={styles.logo}
+          resizeMode="contain"
+        />
+        <View>
+          <Text style={styles.greeting}>Shop with 1Fi</Text>
+          <TouchableOpacity
+            activeOpacity={0.7}
+            onPress={onLocationPress}
+            style={styles.locationSelector}
+          >
+            <MapPin size={14} color={colors.primary} />
+            <Text style={styles.locationText} numberOfLines={1}>{location}</Text>
+            <ChevronDown size={14} color={colors.textSecondary} />
+          </TouchableOpacity>
+        </View>
       </View>
 
       <TouchableOpacity
@@ -48,6 +55,16 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.lg,
     paddingTop: spacing.md,
     paddingBottom: spacing.sm,
+  },
+  leftSection: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.md,
+  },
+  logo: {
+    width: 44,
+    height: 44,
+    borderRadius: borderRadius.md,
   },
   greeting: {
     fontSize: typography.sizes.title,

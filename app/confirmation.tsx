@@ -54,13 +54,11 @@ export default function ConfirmationScreen() {
         {/* Product Preview Card */}
         <View style={[styles.card, shadows.sm]}>
           <View style={styles.productRow}>
-            {params.productImage ? (
-              <Image
-                source={{ uri: params.productImage }}
-                style={styles.productThumb}
-                resizeMode="cover"
-              />
-            ) : null}
+            <Image
+              source={require('../assets/1fi-logo.png')}
+              style={styles.productThumb}
+              resizeMode="cover"
+            />
             <View style={styles.productInfo}>
               <Text style={styles.brandText}>{params.brand}</Text>
               <Text style={styles.productName}>{params.productName}</Text>
