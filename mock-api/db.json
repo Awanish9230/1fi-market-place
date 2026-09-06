@@ -1,0 +1,363 @@
+{
+  "products": [
+    {
+      "id": "iphone-15",
+      "name": "Apple iPhone 15",
+      "brand": "Apple",
+      "category": "Mobiles",
+      "price": 59999,
+      "originalPrice": 69900,
+      "discountPercentage": 14,
+      "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=600&auto=format&fit=crop&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=600&auto=format&fit=crop&q=80"
+      ],
+      "description": "Dynamic Island bubbles up alerts and Live Activities. 48MP Main camera with 2x Telephoto captures stunning high-resolution portraits.",
+      "highlights": [
+        "Dynamic Island & 6.1\" Super Retina XDR",
+        "A16 Bionic chip with 5-core GPU",
+        "48MP Main Camera with 2x Optical Zoom",
+        "USB-C Connector with Fast Charging",
+        "All-day battery life with up to 20h playback"
+      ],
+      "specs": [
+        { "label": "Display", "value": "6.1-inch Super Retina XDR OLED" },
+        { "label": "Processor", "value": "A16 Bionic Chip" },
+        { "label": "Camera", "value": "48MP Main + 12MP Ultra Wide" },
+        { "label": "Battery", "value": "Up to 20 hours video playback" },
+        { "label": "Connector", "value": "USB-C" }
+      ],
+      "rating": 4.8,
+      "reviewsCount": 2480,
+      "isPopular": true,
+      "isNewArrival": false,
+      "variants": [
+        { "id": "128gb-black", "name": "128 GB - Black", "price": 59999, "originalPrice": 69900, "inStock": true, "colorHex": "#1F2937" },
+        { "id": "256gb-blue", "name": "256 GB - Blue", "price": 69999, "originalPrice": 79900, "inStock": true, "colorHex": "#60A5FA" },
+        { "id": "512gb-green", "name": "512 GB - Green", "price": 89999, "originalPrice": 99900, "inStock": true, "colorHex": "#34D399" }
+      ],
+      "emiPlans": [
+        { "id": "3m", "months": 3, "monthlyAmount": 19999, "totalAmount": 59997, "interestRate": 0, "isNoCost": true, "badge": "No Cost EMI", "processingFee": 0 },
+        { "id": "6m", "months": 6, "monthlyAmount": 9999, "totalAmount": 59994, "interestRate": 0, "isNoCost": true, "badge": "Most Popular", "processingFee": 0 },
+        { "id": "9m", "months": 9, "monthlyAmount": 7055, "totalAmount": 63495, "interestRate": 14, "isNoCost": false, "badge": "Flexible", "processingFee": 199 },
+        { "id": "12m", "months": 12, "monthlyAmount": 5417, "totalAmount": 65004, "interestRate": 15, "isNoCost": false, "badge": "Lowest Monthly", "processingFee": 199 }
+      ]
+    },
+    {
+      "id": "samsung-s24",
+      "name": "Samsung Galaxy S24 Ultra 5G",
+      "brand": "Samsung",
+      "category": "Mobiles",
+      "price": 119999,
+      "originalPrice": 134999,
+      "discountPercentage": 11,
+      "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&auto=format&fit=crop&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&auto=format&fit=crop&q=80"
+      ],
+      "description": "Meet Galaxy S24 Ultra, the ultimate form of Galaxy Ultra with a new titanium exterior and a 6.8\" flat display with Galaxy AI.",
+      "highlights": [
+        "Galaxy AI features: Circle to Search & Live Translate",
+        "Titanium Frame & Corning Gorilla Armor",
+        "200MP Quad Telephoto Camera with 100x Zoom",
+        "Snapdragon 8 Gen 3 for Galaxy"
+      ],
+      "specs": [
+        { "label": "Display", "value": "6.8-inch Dynamic AMOLED 2X 120Hz" },
+        { "label": "Processor", "value": "Snapdragon 8 Gen 3" },
+        { "label": "Camera", "value": "200MP + 50MP + 12MP + 10MP" },
+        { "label": "Battery", "value": "5000 mAh Fast Charging" }
+      ],
+      "rating": 4.9,
+      "reviewsCount": 1820,
+      "isPopular": true,
+      "isNewArrival": true,
+      "variants": [
+        { "id": "256gb-gray", "name": "12GB / 256GB - Titanium Gray", "price": 119999, "originalPrice": 134999, "inStock": true, "colorHex": "#6B7280" },
+        { "id": "512gb-black", "name": "12GB / 512GB - Titanium Black", "price": 131999, "originalPrice": 146999, "inStock": true, "colorHex": "#111827" }
+      ],
+      "emiPlans": [
+        { "id": "3m", "months": 3, "monthlyAmount": 39999, "totalAmount": 119997, "interestRate": 0, "isNoCost": true, "badge": "No Cost EMI", "processingFee": 0 },
+        { "id": "6m", "months": 6, "monthlyAmount": 19999, "totalAmount": 119994, "interestRate": 0, "isNoCost": true, "badge": "Most Popular", "processingFee": 0 },
+        { "id": "12m", "months": 12, "monthlyAmount": 10834, "totalAmount": 130008, "interestRate": 15, "isNoCost": false, "badge": "Lowest Monthly", "processingFee": 199 }
+      ]
+    },
+    {
+      "id": "macbook-air-m3",
+      "name": "Apple MacBook Air 13\" (M3)",
+      "brand": "Apple",
+      "category": "Laptops",
+      "price": 99990,
+      "originalPrice": 114900,
+      "discountPercentage": 13,
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&auto=format&fit=crop&q=80",
+      "description": "Lean. Mean. M3 machine. Incredibly thin and blazing fast with up to 18 hours of battery life to breeze through work and play.",
+      "highlights": [
+        "Apple M3 chip with 8-core CPU and 10-core GPU",
+        "13.6-inch Liquid Retina display with 500 nits brightness",
+        "Fanless, silent design with unibody aluminum",
+        "Up to 18 hours of battery life"
+      ],
+      "specs": [
+        { "label": "Processor", "value": "Apple M3 Chip (8-core CPU / 10-core GPU)" },
+        { "label": "Display", "value": "13.6-inch Liquid Retina Display" },
+        { "label": "Memory", "value": "8GB Unified Memory" },
+        { "label": "Storage", "value": "256GB SSD" },
+        { "label": "Weight", "value": "1.24 kg" }
+      ],
+      "rating": 4.9,
+      "reviewsCount": 940,
+      "isPopular": true,
+      "isNewArrival": true,
+      "variants": [
+        { "id": "8gb-256gb-starlight", "name": "8GB / 256GB - Starlight", "price": 99990, "originalPrice": 114900, "inStock": true, "colorHex": "#F5E6D3" },
+        { "id": "16gb-512gb-midnight", "name": "16GB / 512GB - Midnight", "price": 134990, "originalPrice": 154900, "inStock": true, "colorHex": "#1E293B" }
+      ],
+      "emiPlans": [
+        { "id": "3m", "months": 3, "monthlyAmount": 33330, "totalAmount": 99990, "interestRate": 0, "isNoCost": true, "badge": "No Cost EMI", "processingFee": 0 },
+        { "id": "6m", "months": 6, "monthlyAmount": 16665, "totalAmount": 99990, "interestRate": 0, "isNoCost": true, "badge": "Most Popular", "processingFee": 0 },
+        { "id": "12m", "months": 12, "monthlyAmount": 9028, "totalAmount": 108336, "interestRate": 15, "isNoCost": false, "badge": "Lowest Monthly", "processingFee": 199 }
+      ]
+    },
+    {
+      "id": "sony-wh-1000xm5",
+      "name": "Sony WH-1000XM5 ANC Headphones",
+      "brand": "Sony",
+      "category": "Audio",
+      "price": 28990,
+      "originalPrice": 34990,
+      "discountPercentage": 17,
+      "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=600&auto=format&fit=crop&q=80",
+      "description": "Industry-leading noise cancellation with two processors and eight microphones. Magnificent sound engineered to perfection with 30-hour battery life.",
+      "highlights": [
+        "Industry Leading Active Noise Cancellation",
+        "Crystal clear hands-free calling with 4 beamforming mics",
+        "Up to 30-hour battery life with quick charging (3 min = 3 hrs)",
+        "Ultra-comfortable lightweight design with soft fit leather"
+      ],
+      "specs": [
+        { "label": "Driver Unit", "value": "30mm precision engineered" },
+        { "label": "Battery Life", "value": "Up to 30 hours (ANC ON)" },
+        { "label": "Bluetooth", "value": "v5.2, LDAC, AAC, SBC" },
+        { "label": "Weight", "value": "250g" }
+      ],
+      "rating": 4.7,
+      "reviewsCount": 3120,
+      "isPopular": true,
+      "variants": [
+        { "id": "black", "name": "Black Edition", "price": 28990, "originalPrice": 34990, "inStock": true, "colorHex": "#1F2937" },
+        { "id": "silver", "name": "Platinum Silver", "price": 28990, "originalPrice": 34990, "inStock": true, "colorHex": "#E5E7EB" },
+        { "id": "midnight-blue", "name": "Midnight Blue", "price": 29990, "originalPrice": 34990, "inStock": true, "colorHex": "#1E3A8A" }
+      ],
+      "emiPlans": [
+        { "id": "3m", "months": 3, "monthlyAmount": 9663, "totalAmount": 28989, "interestRate": 0, "isNoCost": true, "badge": "No Cost EMI", "processingFee": 0 },
+        { "id": "6m", "months": 6, "monthlyAmount": 4831, "totalAmount": 28986, "interestRate": 0, "isNoCost": true, "badge": "Most Popular", "processingFee": 0 },
+        { "id": "9m", "months": 9, "monthlyAmount": 3410, "totalAmount": 30690, "interestRate": 14, "isNoCost": false, "badge": "Flexible", "processingFee": 199 }
+      ]
+    },
+    {
+      "id": "dell-xps-14",
+      "name": "Dell XPS 14 Core Ultra 7",
+      "brand": "Dell",
+      "category": "Laptops",
+      "price": 149990,
+      "originalPrice": 169990,
+      "discountPercentage": 11,
+      "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=600&auto=format&fit=crop&q=80",
+      "description": "Crafted with CNC machined aluminum and Gorilla Glass 3. Powered by Intel Core Ultra processors with built-in AI acceleration.",
+      "highlights": [
+        "Intel Core Ultra 7 155H with AI Boost NPU",
+        "14.5\" 3.2K OLED Touch Display (120Hz)",
+        "NVIDIA GeForce RTX 4050 6GB GDDR6",
+        "Seamless glass touchpad with haptic response"
+      ],
+      "specs": [
+        { "label": "Processor", "value": "Intel Core Ultra 7 155H" },
+        { "label": "RAM", "value": "32GB LPDDR5X" },
+        { "label": "Storage", "value": "1TB PCIe NVMe SSD" },
+        { "label": "Graphics", "value": "NVIDIA RTX 4050 6GB" }
+      ],
+      "rating": 4.6,
+      "reviewsCount": 420,
+      "variants": [
+        { "id": "16gb-512gb-graphite", "name": "16GB RAM / 512GB SSD - Graphite", "price": 149990, "originalPrice": 169990, "inStock": true, "colorHex": "#374151" },
+        { "id": "32gb-1tb-platinum", "name": "32GB RAM / 1TB SSD - Platinum", "price": 179990, "originalPrice": 199990, "inStock": true, "colorHex": "#E5E7EB" }
+      ],
+      "emiPlans": [
+        { "id": "3m", "months": 3, "monthlyAmount": 49996, "totalAmount": 149988, "interestRate": 0, "isNoCost": true, "badge": "No Cost EMI", "processingFee": 0 },
+        { "id": "6m", "months": 6, "monthlyAmount": 24998, "totalAmount": 149988, "interestRate": 0, "isNoCost": true, "badge": "Most Popular", "processingFee": 0 },
+        { "id": "12m", "months": 12, "monthlyAmount": 13543, "totalAmount": 162516, "interestRate": 15, "isNoCost": false, "badge": "Lowest Monthly", "processingFee": 199 }
+      ]
+    },
+    {
+      "id": "sony-bravia-55",
+      "name": "Sony Bravia 55\" 4K HDR Google TV",
+      "brand": "Sony",
+      "category": "TV",
+      "price": 57990,
+      "originalPrice": 79990,
+      "discountPercentage": 27,
+      "image": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=600&auto=format&fit=crop&q=80",
+      "description": "Experience thrilling 4K HDR entertainment with 4K Processor X1 and Motionflow XR. Dolby Vision and Dolby Atmos bring cinematic excitement home.",
+      "highlights": [
+        "4K Ultra HD Resolution with X1 4K Processor",
+        "Google TV with Google Assistant voice control",
+        "Dolby Atmos & Dolby Vision HDR support",
+        "Open Baffle Speaker with Clear Phase sound"
+      ],
+      "specs": [
+        { "label": "Screen Size", "value": "55 Inches (138.8 cm)" },
+        { "label": "Resolution", "value": "4K Ultra HD (3840 x 2160)" },
+        { "label": "Refresh Rate", "value": "60 Hz (Motionflow XR 200)" },
+        { "label": "Sound", "value": "20 Watts Dolby Atmos" }
+      ],
+      "rating": 4.8,
+      "reviewsCount": 1650,
+      "variants": [
+        { "id": "55-inch", "name": "55 Inch (139 cm)", "price": 57990, "originalPrice": 79990, "inStock": true },
+        { "id": "65-inch", "name": "65 Inch (164 cm)", "price": 84990, "originalPrice": 119990, "inStock": true }
+      ],
+      "emiPlans": [
+        { "id": "3m", "months": 3, "monthlyAmount": 19330, "totalAmount": 57990, "interestRate": 0, "isNoCost": true, "badge": "No Cost EMI", "processingFee": 0 },
+        { "id": "6m", "months": 6, "monthlyAmount": 9665, "totalAmount": 57990, "interestRate": 0, "isNoCost": true, "badge": "Most Popular", "processingFee": 0 },
+        { "id": "12m", "months": 12, "monthlyAmount": 5236, "totalAmount": 62832, "interestRate": 15, "isNoCost": false, "badge": "Lowest Monthly", "processingFee": 199 }
+      ]
+    },
+    {
+      "id": "oneplus-12",
+      "name": "OnePlus 12 5G Flowy Emerald",
+      "brand": "OnePlus",
+      "category": "Mobiles",
+      "price": 64999,
+      "originalPrice": 69999,
+      "discountPercentage": 7,
+      "image": "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=600&auto=format&fit=crop&q=80",
+      "description": "Snapdragon 8 Gen 3 with 4th Gen Hasselblad Camera for Mobile. 5400 mAh battery with ultra-fast 100W SUPERVOOC charging.",
+      "highlights": [
+        "Qualcomm Snapdragon 8 Gen 3 Flagship Chip",
+        "4th Gen Hasselblad Camera System with 64MP Periscope",
+        "100W Wired + 50W Wireless SUPERVOOC charging",
+        "2K 120 Hz ProXDR Display with Aqua Touch"
+      ],
+      "specs": [
+        { "label": "Processor", "value": "Snapdragon 8 Gen 3" },
+        { "label": "Display", "value": "6.82\" 2K 120Hz LTPO AMOLED" },
+        { "label": "Camera", "value": "50MP (Sony LYT-808) + 64MP Periscope" },
+        { "label": "Battery", "value": "5400 mAh + 100W SUPERVOOC" }
+      ],
+      "rating": 4.7,
+      "reviewsCount": 1100,
+      "variants": [
+        { "id": "12gb-256gb-emerald", "name": "12GB / 256GB - Flowy Emerald", "price": 64999, "originalPrice": 69999, "inStock": true, "colorHex": "#065F46" },
+        { "id": "16gb-512gb-black", "name": "16GB / 512GB - Silky Black", "price": 69999, "originalPrice": 74999, "inStock": true, "colorHex": "#1F2937" }
+      ],
+      "emiPlans": [
+        { "id": "3m", "months": 3, "monthlyAmount": 21666, "totalAmount": 64998, "interestRate": 0, "isNoCost": true, "badge": "No Cost EMI", "processingFee": 0 },
+        { "id": "6m", "months": 6, "monthlyAmount": 10833, "totalAmount": 64998, "interestRate": 0, "isNoCost": true, "badge": "Most Popular", "processingFee": 0 },
+        { "id": "12m", "months": 12, "monthlyAmount": 5869, "totalAmount": 70428, "interestRate": 15, "isNoCost": false, "badge": "Lowest Monthly", "processingFee": 199 }
+      ]
+    },
+    {
+      "id": "apple-watch-s9",
+      "name": "Apple Watch Series 9 GPS",
+      "brand": "Apple",
+      "category": "Wearables",
+      "price": 38990,
+      "originalPrice": 41900,
+      "discountPercentage": 7,
+      "image": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=600&auto=format&fit=crop&q=80",
+      "description": "Smarter, brighter, mightier. A magical new way to use Apple Watch without touching the screen with Double Tap gesture.",
+      "highlights": [
+        "S9 SiP chip with 4-core Neural Engine",
+        "Double tap gesture for easy one-handed control",
+        "2000 nits Always-On Retina display",
+        "Advanced health sensors: ECG, Blood Oxygen, Temperature"
+      ],
+      "specs": [
+        { "label": "Case Size", "value": "45mm Aluminum Case" },
+        { "label": "Connectivity", "value": "GPS, Bluetooth 5.3, Wi-Fi" },
+        { "label": "Water Resistance", "value": "50m Water Resistant" },
+        { "label": "Battery", "value": "18 hours regular, 36h Low Power" }
+      ],
+      "rating": 4.8,
+      "reviewsCount": 890,
+      "variants": [
+        { "id": "41mm-midnight", "name": "41mm - Midnight Sport Band", "price": 38990, "originalPrice": 41900, "inStock": true, "colorHex": "#1E293B" },
+        { "id": "45mm-starlight", "name": "45mm - Starlight Sport Band", "price": 41990, "originalPrice": 44900, "inStock": true, "colorHex": "#F5E6D3" }
+      ],
+      "emiPlans": [
+        { "id": "3m", "months": 3, "monthlyAmount": 12996, "totalAmount": 38988, "interestRate": 0, "isNoCost": true, "badge": "No Cost EMI", "processingFee": 0 },
+        { "id": "6m", "months": 6, "monthlyAmount": 6498, "totalAmount": 38988, "interestRate": 0, "isNoCost": true, "badge": "Most Popular", "processingFee": 0 },
+        { "id": "9m", "months": 9, "monthlyAmount": 4585, "totalAmount": 41265, "interestRate": 14, "isNoCost": false, "badge": "Flexible", "processingFee": 199 }
+      ]
+    },
+    {
+      "id": "jbl-charge-5",
+      "name": "JBL Charge 5 Portable Bluetooth Speaker",
+      "brand": "JBL",
+      "category": "Audio",
+      "price": 14999,
+      "originalPrice": 17999,
+      "discountPercentage": 16,
+      "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&auto=format&fit=crop&q=80",
+      "description": "Bold JBL Original Pro Sound with long excursion driver, separate tweeter and dual pumping bass radiators. Up to 20 hours of playtime.",
+      "highlights": [
+        "Bold JBL Original Pro Sound with deep bass",
+        "20 hours of playtime and built-in powerbank",
+        "IP67 waterproof and dustproof design",
+        "PartyBoost feature to pair multiple speakers"
+      ],
+      "specs": [
+        { "label": "Output Power", "value": "40W RMS (Woofer 30W + Tweeter 10W)" },
+        { "label": "Battery Capacity", "value": "7500 mAh (20 hrs playtime)" },
+        { "label": "Ingress Protection", "value": "IP67 Waterproof & Dustproof" },
+        { "label": "Bluetooth", "value": "v5.1" }
+      ],
+      "rating": 4.6,
+      "reviewsCount": 1450,
+      "variants": [
+        { "id": "black", "name": "Squad Black", "price": 14999, "originalPrice": 17999, "inStock": true, "colorHex": "#1F2937" },
+        { "id": "blue", "name": "Ocean Blue", "price": 14999, "originalPrice": 17999, "inStock": true, "colorHex": "#2563EB" },
+        { "id": "red", "name": "Fiesta Red", "price": 14999, "originalPrice": 17999, "inStock": true, "colorHex": "#DC2626" }
+      ],
+      "emiPlans": [
+        { "id": "3m", "months": 3, "monthlyAmount": 4999, "totalAmount": 14997, "interestRate": 0, "isNoCost": true, "badge": "No Cost EMI", "processingFee": 0 },
+        { "id": "6m", "months": 6, "monthlyAmount": 2499, "totalAmount": 14994, "interestRate": 0, "isNoCost": true, "badge": "Most Popular", "processingFee": 0 }
+      ]
+    },
+    {
+      "id": "samsung-crystal-4k",
+      "name": "Samsung 43\" Crystal 4K Vivid Pro TV",
+      "brand": "Samsung",
+      "category": "TV",
+      "price": 28990,
+      "originalPrice": 41900,
+      "discountPercentage": 31,
+      "image": "https://images.unsplash.com/photo-1509281373149-e957c6296406?w=600&auto=format&fit=crop&q=80",
+      "description": "PurColor and Crystal Processor 4K deliver lifelike colors and sharp contrast. Q-Symphony soundbar synergy and SmartThings hub.",
+      "highlights": [
+        "Crystal Processor 4K with 4K Upscaling",
+        "PurColor express lifelike picture performance",
+        "OTS Lite (Object Tracking Sound) & Q-Symphony",
+        "SolarCell Remote control and Voice assistants"
+      ],
+      "specs": [
+        { "label": "Screen Size", "value": "43 Inches (108 cm)" },
+        { "label": "Resolution", "value": "4K Ultra HD (3840 x 2160)" },
+        { "label": "Audio", "value": "20W 2 Channel OTS Lite" }
+      ],
+      "rating": 4.5,
+      "reviewsCount": 780,
+      "variants": [
+        { "id": "43-inch", "name": "43 Inch (108 cm)", "price": 28990, "originalPrice": 41900, "inStock": true },
+        { "id": "50-inch", "name": "50 Inch (125 cm)", "price": 37990, "originalPrice": 52900, "inStock": true }
+      ],
+      "emiPlans": [
+        { "id": "3m", "months": 3, "monthlyAmount": 9663, "totalAmount": 28989, "interestRate": 0, "isNoCost": true, "badge": "No Cost EMI", "processingFee": 0 },
+        { "id": "6m", "months": 6, "monthlyAmount": 4831, "totalAmount": 28986, "interestRate": 0, "isNoCost": true, "badge": "Most Popular", "processingFee": 0 },
+        { "id": "9m", "months": 9, "monthlyAmount": 3410, "totalAmount": 30690, "interestRate": 14, "isNoCost": false, "badge": "Flexible", "processingFee": 199 }
+      ]
+    }
+  ]
+}
