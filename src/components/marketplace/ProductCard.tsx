@@ -23,7 +23,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onPress }) =>
     >
       <View style={styles.imageContainer}>
         <Image
-          source={require('../../../assets/1fi-logo.png')}
+          source={{ uri: product.image }}
           style={styles.image}
           resizeMode="cover"
         />

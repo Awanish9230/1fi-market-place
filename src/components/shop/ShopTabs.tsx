@@ -20,7 +20,7 @@ interface TabItem {
 const TABS: TabItem[] = [
   { id: 'top-brands', label: 'Top Brands' },
   { id: 'nearby-stores', label: 'Nearby Stores' },
-  { id: 'marketplace', label: '1Fi Marketplace', badge: 'NEW' },
+  { id: 'marketplace', label: 'Marketplace', badge: '1Fi' },
 ];
 
 export const ShopTabs: React.FC<ShopTabsProps> = ({ activeTab, onTabChange }) => {
@@ -79,30 +79,32 @@ export const ShopTabs: React.FC<ShopTabsProps> = ({ activeTab, onTabChange }) =>
 
 const styles = StyleSheet.create({
   wrapper: {
-    paddingVertical: spacing.sm,
+    paddingVertical: spacing.xs,
   },
   container: {
     flexDirection: 'row',
-    paddingHorizontal: spacing.lg,
+    paddingLeft: spacing.lg,
+    paddingRight: spacing.xxl,
     gap: spacing.sm,
+    alignItems: 'center',
   },
   tab: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.sm + 2,
+    paddingHorizontal: spacing.md + 2,
+    paddingVertical: spacing.sm,
     borderRadius: borderRadius.pill,
     backgroundColor: colors.cardBackground,
     borderWidth: 1,
     borderColor: colors.border,
-    gap: 6,
+    gap: 5,
   },
   activeTab: {
     backgroundColor: colors.primary,
     borderColor: colors.primary,
   },
   tabText: {
-    fontSize: typography.sizes.sm,
+    fontSize: typography.sizes.xs + 1,
     fontWeight: typography.weights.semibold,
     color: colors.textSecondary,
   },
